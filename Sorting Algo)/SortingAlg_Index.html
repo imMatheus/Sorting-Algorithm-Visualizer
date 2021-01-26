@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SortingAlg_Style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Sorting</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    <a href="../../index.html"><span id="goBack">Go back</span></a>
+    </div>
+
+    <div class="hero">
+        <div id="mainArea"></div>
+    </div>
+    <div class="control">
+        <div class="control-center">
+            <div class="control-center-text">Align Sticks</div>
+            <div class="control-center-buttons">
+                <button id="sticks_To_Top">Top</button>
+                <button id="sticks_To_Center">Center</button>
+                <button id="sticks_To_Bottom">Bottom</button>
+            </div>
+        </div>
+        <div class="control-ranges">
+            <div class="newArray">
+                <button id="changeHeight_ID">New Array</button>
+            </div>
+            <div class="ranges-range">
+                <input type="range" id="sticksRange" name="sticksRangeName" max="120" value="7" min="6" step="1">
+                <div id="sticksRangeLabel"></div>
+            </div>
+            <div class="ranges-range"> 
+                <input type="range" id="burnOutRange" name="burnOutRangeName" max="300" value="80" min="1" step="1">
+                <div id="burnOutRangeLabel"></div>
+            </div>
+        </div>
+            <div class="control-center-text">Sorting Algorithms </div>
+            <div class="control-buttons">
+                <button id="selection_ID">selection</button>
+                <button id="bubbel_ID">Bubbel</button>
+                <button id="insertion_ID">Insertion</button>
+                <button id="cocktail_ID">Cocktail</button>
+               
+            </div>  
+    </div>  
+    <div id="error-msg">Please wait until the current algorithm is finished :)</div>
+
+    <script type="module" defer src="SortingAlg_Script.js"></script>
+    <script type="module" defer src="./algorithms/radixSort.js"></script>
+</body>
+</html>
